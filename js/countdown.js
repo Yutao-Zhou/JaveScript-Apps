@@ -24,4 +24,4 @@ function count(){
 	secondsHTML.innerHTML = seconds;
 }
 count();
-setInterval(count, 1);
+setInterval(count, 500);

@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+
 h1 {
   font-family: Georgia;
   font-size: 150px;
@@ -9,7 +10,7 @@ h1 {
 }
 
 body {
-  background-image: url("images/background.jpg");
+  background-image: url("../images/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
