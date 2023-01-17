@@ -1,7 +1,9 @@
 body{
   background: #111;
   margin: 0;
+/*  overflow: hidden;*/
 }
+
 
 *{
   box-sizing: border-box;
@@ -13,7 +15,7 @@ h1, h3 {
 
 .weatherApp {
   min-height: 100vh;
-  background-image: url("../images/weather/sunny-day.jpg");
+  background-image: url("../images/weather/clear-day.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -21,7 +23,7 @@ h1, h3 {
   justify-content: center;
   position: relative;
   color: #fff;
-  transition: 100ms;
+  transition: 80ms;
   margin: 0;
   opacity: 1;
 }
@@ -56,13 +58,13 @@ h1, h3 {
   align-items: center;
 }
 
-.city,
+.cityInfo,
 .temp,
 .weather{
   margin: 0em 1.5em;
 }
 
-.city h1 {
+.cityInfo h1 {
   margin: 0;
   margin-bottom: 0.1em;
   font-size: 3em;
@@ -89,8 +91,8 @@ h1, h3 {
               rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.18);
-  padding: 3em 2em;
-  overflow-y: scroll;
+  padding: 3em 2em 0 2em;
+  overflow: scroll;
 }
 
 .searchPanel form {
