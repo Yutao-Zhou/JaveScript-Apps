@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+	<head>
+		<link rel="stylesheet" href="../css/weather.css">
+		<link rel="stylesheet" href="../css/style.css">
+		<script src="../js/weather.js" defer></script>
+		<div class="tab">
+			<button class="tablinks" onclick="location.href = '../index.html';">Count Down</button>
+			<button class="tablinks" onclick="location.href = '../html/weather.html';">Weather</button>
+			<button class="tablinks" onclick="location.href = '../html/about.html';">About</button>
+		</div>
+	    <title>Weather</title>
+	</head>
+	<body>
+		<div class="weatherApp">
+			<div class="container">
+				<h3 id="title">Weather</h1>
+				<div>
+					<h1 class="temp"> 24&#176;</h1>
+					<div class="cityInfo">
+						<h1 class="cityName">New York</h1>
+						<small>
+							<span class="low">Low:&nbsp;10&#176;</span>
+							-
+							<span class="high">High:&nbsp;30&#176;</span>
+						</small>
+					</div>
+					<div class="weather">
+						<img src="http://openweathermap.org/img/wn/01d@2x.png" class="icon">
+						<span class="condition">Sunny</span>
+					</div>
+				</div>
+			</div>
+			<div class="searchPanel">
+				<form id="locationInput">
+					<input type="text" class="search" placeholder="Search Location..."/>
+					<button type="submit" class="submit">
+						<i class="fa fa-search">&#128269; </i>
+					</button>
+				</form>
+				<ul class="cities">
+					<li class="city">New York</li>
+					<li class="city">San Jose</li>
+					<li class="city">San Francisco</li>
+					<li class="city">Beijing</li>
+					<li class="city">Santa Barbara</li>
+					<li class="city">Washington D.C.</li>
+					<li class="city">London</li>
+					<li class="city">Berlin</li>
+					<li class="city">Moscow</li>
+					<li class="city">Canberra</li>
+					<li class="city">Ottawa</li>
+					<li class="city">Seoul</li>
+					<li class="city">Paris</li>
+					<li class="city">Nanchong</li>
+					<li class="city">Yingtan</li>
+					<li class="city">Miami</li>
+					<li class="city">Mexico City</li>
+					<li class="city">Tokyo</li>
+				</ul>
+				<ul class="details">
+					<h4>Weather Details</h4>
+					<li>
+						<span>Cloudy</span>
+						<span class="cloud">89%</span>
+					</li>
+					<li>
+						<span>Humidity</span>
+						<span class="humidity">89%</span>
+					</li>
+					<li>
+						<span>Wind</span>
+						<span class="wind">1&nbsp;km/h</span>
+					</li>
+					<li>
+						<span>Visibility</span>
+						<span class="visibility">10000&nbsp;m</span>
+					</li>
+					<li>
+						<span>Feels Like</span>
+						<span class="feelsLike">24&#176;</span>
+					</li>
+					<li>
+						<span>Pressure</span>
+						<span class="pressure">1013&nbsp;millibars</span>
+					</li>
+					<li>
+						<span>Sunrise</span>
+						<span class="sunrise">10:00</span>
+					</li>
+					<li>
+						<span>Sunset</span>
+						<span class="sunset">17:00</span>
+					</li>
+					<li>
+						<span>Timezone</span>
+						<span class="timezone">17:00</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>

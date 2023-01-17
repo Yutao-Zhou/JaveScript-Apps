@@ -1,0 +1,170 @@
+body{
+  background: #111;
+  margin: 0;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+h1, h3 {
+  font-weight: 400;
+}
+
+.weatherApp {
+  min-height: 100vh;
+  background-image: url("../images/weather/sunny-day.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+/*  align-items: center;*/
+  justify-content: center;
+  position: relative;
+  color: #fff;
+  transition: 100ms;
+  margin: 0;
+  opacity: 1;
+}
+
+.weatherApp::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 0;
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 2em 3em 4em 3em;
+}
+
+.container > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.city,
+.temp,
+.weather{
+  margin: 0em 1.5em;
+}
+
+.city h1 {
+  margin: 0;
+  margin-bottom: 0.1em;
+  font-size: 3em;
+}
+
+.temp {
+  margin: 0;
+  font-size: 5.5em;
+}
+
+.weather img {
+  display: block;
+  margin: -1em -1.6em;
+}
+
+.searchPanel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  background: rgba(110, 110, 110, 0.5);
+  box-shadow: 0 8px 32px 0
+              rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 3em 2em;
+  overflow-y: scroll;
+}
+
+.searchPanel form {
+  margin-bottom: 3em;
+  position: absolute;
+  top: 0;
+  right: 0em;
+  padding: 1em;
+  marging: 0;
+  width: 96%;
+}
+
+.submit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1em;
+  marging: 0;
+  border: none;
+  outline: none;
+  background: #D6EAF8;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.submit:hover {
+  background: #fff;
+  color: #000;
+}
+
+.search {
+  background: none;
+  border: none;
+  border-bottom: 1px #D7DBDD solid;
+  padding: 0 1em 0.5em 0;
+  width 80%
+  color: #fff;
+  font-size: 1.1em;
+}
+
+.search:focus {
+  outline: none;
+}
+
+.search::placeholder {
+  color: #D7DBDD;
+}
+
+.searchPanel ul {
+  padding: 0 0 1em 0;
+  margin: 2em 0;
+  border-bottom: 1px #D7DBDD solid;
+}
+
+.searchPanel ul li{
+  color: #D7DBDD;
+  margin: 1em 0;
+}
+
+.searchPanel ul h4{
+  margin: 2em 0;
+}
+
+.city{
+  display: block;
+  cursor: pointer;
+}
+
+.city:hover {
+  color: #fff;
+}
+
+.details li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
