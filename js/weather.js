@@ -61,7 +61,7 @@ function fetchWeatherData(lat, lon){
 			high.innerHTML = "High:&nbsp;" + Math.round((d['main']['temp_max'] - 273.15 + Number.EPSILON) * 100) / 100 + "&#8451;";
 			low.innerHTML = "Low:&nbsp;" + Math.round((d['main']['temp_min'] - 273.15 + Number.EPSILON) * 100) / 100 + "&#8451;";
 			name.innerHTML = d['name'];
-			icon.src = `http://openweathermap.org/img/wn/${d['weather'][0]['icon']}@2x.png`;
+			icon.src = `https://openweathermap.org/img/wn/${d['weather'][0]['icon']}@2x.png`;
 			condition.innerHTML = d['weather'][0]['description'][0].toUpperCase() + d['weather'][0]['description'].substring(1);
 			cloud.innerHTML = d["clouds"]["all"] + "%";
 			humidity.innerHTML = d["main"]["humidity"] + "%";
@@ -138,7 +138,7 @@ function fetchWeatherData(lat, lon){
 
 function geoEncoding(cityInput){
 	console.log(cityInput)
-	fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${cityInput}&limit=0&appid=${apiKey}`)
+	fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${cityInput}&limit=0&appid=${apiKey}`)
 		.then((response) => response.json())
   		.then((data) => {
   			lat = data[0]['lat'];
