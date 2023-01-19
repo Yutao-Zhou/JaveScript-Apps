@@ -2,6 +2,7 @@
 <meta charset="utf-8">
 <html>
 	<head>
+		<script src="https://kit.fontawesome.com/3773a662d3.js" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="../css/todo.css">
 		<link rel="stylesheet" href="../css/style.css">
 		<script src="../js/todo.js" defer></script>
@@ -14,6 +15,26 @@
 	    <title>Todo</title>
 	</head>
 	<body>
-
+		<div class="container">
+			<div class="addPannel">
+				<h1>Todo List</h1>
+				<form id="todoForm">
+					<input type="text" class="todoContent" placeholder="Type things to do..."/>
+					<button type="submit" class="addButton">
+						<i class="AddButtonText">Add Task</i>
+					</button>
+				</form>
+			</div>
+			<h3>Inprogress Tasks</h3>
+			<div class="inprogressTasks">
+				<ul class="inprogressTasksList" id="inprogressTasksList">
+				</ul>
+			</div>
+			<h3>Completed Tasks</h3>
+			<div class="completeTasks">
+				<ul class="completeTasksList" id="completeTasksList">
+				</ul>
+			</div>
+		</div>
 	</body>
 </html>

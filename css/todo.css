@@ -1,0 +1,143 @@
+body {
+	min-height: 100vh;
+	background-image: url("../images/todo.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	align-items: center;
+	justify-content: center;
+	transition: 80ms;
+	margin: 0;
+}
+
+.container {
+	margin: auto;
+	width: 40%;
+	height: 100%;
+	min-height: 100vh;
+	background: rgba(110, 110, 110, 0.5);
+	box-shadow: 0 8px 32px 0
+	          rgba(0, 0, 0, 0.3);
+	backdrop-filter: blur(10px);
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	padding: 3em 2em;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	color: #fff;
+}
+
+.todoForm {
+	width: 100%;
+}
+
+.todoContent {
+	background: none;
+	border: none;
+	border-bottom: 1px #D7DBDD solid;
+	padding: 0 1em 0.5em 0;
+	width: 80%;
+	font-size: 1.1em;
+	color: #fff;
+}
+
+.todoContent::placeholder {
+	color: #D7DBDD;
+}
+
+.addButton {
+	padding: 1em;
+	marging: 0;
+	border: 1px solid #fff;
+	outline: none;
+	background: none;
+	cursor: pointer;
+	transition: 0.4s;
+}
+
+.AddButtonText {
+	color: #fff;
+	font-weight: bold;
+}
+
+.addButton:hover {
+  background: #00BFFF;
+}
+
+.inprogressTasksList {
+	border: 1px solid #fff;
+	padding: 1em;
+}
+
+.completeTasksList {
+	border: 1px solid #fff;
+	padding: 1em;
+}
+
+.eachTask {
+	border: 1px solid #fff;
+	padding: 1em;
+	background: #0081C9;
+	display: flex;
+	align-items: center;
+	transition: all 0.5s ease;
+	overflow-wrap: break-word;
+}
+
+.eachTask:hover {
+	background: #2B547E;
+}
+
+.eachTask li {
+	flex: 1;
+}
+
+.completeButton, .deleteButton {
+	background: rgb(133, 193, 233);
+	color: #fff;
+	border: none;
+	padding: 0.5em;
+	cursor: pointer;
+}
+
+.completeButton:hover {
+	background: rgb(40, 180, 99);
+}
+
+.deleteButton:hover {
+	background: rgb(255, 0, 0);
+}
+
+.contentText {
+	float:left;
+	margin-right:5px;
+	width: 70%;
+	color: #fff;
+	font-weight: bold;
+	background: none;
+	backdrop-filter: blur(10px);
+}
+
+.actions button{
+	background: none;
+	color: #fff;
+	border: 1px #D7DBDD solid;
+}
+
+.actions button:hover {
+  background: #00BFFF;
+}
+
+.completed {
+	text-decoration: line-through;
+	opacity: 0.5;
+}
+
+.fall {
+	transform: translateY(8em) rotateZ(10deg);
+	opacity: 0;
+}
+
+li, h3 {
+  clear:both;
+  list-style:none;
+}
