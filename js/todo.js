@@ -5,7 +5,7 @@ const completeTasksList=document.getElementById("completeTasksList");
 
 todoForm.addEventListener('submit', (event) => {
 	if(todoContent.value.length == 0){
-		alert('You must write something!');
+		alert('Todo could not be empty!');
 	} else {
     	addTodo(todoContent.value);
 		todoContent.value = "";
