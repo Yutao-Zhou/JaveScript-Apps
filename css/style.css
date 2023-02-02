@@ -4,7 +4,7 @@
   background-color: #f1f1f1;
 }
 
-.tab button {
+.tab button, tablinks {
   background-color: inherit;
   float: left;
   border: none;
